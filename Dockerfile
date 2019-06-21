@@ -14,7 +14,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN rm -rf /var/cache/apk/*
 
 # Set working directory
-ADD . /var/www/html
 WORKDIR /var/www
 
 # Expose port 9000 and start php-fpm server
