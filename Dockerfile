@@ -13,9 +13,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Remove Cache
 RUN rm -rf /var/cache/apk/*
 
-# Add Code
-ADD . /var/www
-
 # Set working directory
 WORKDIR /var/www
 
