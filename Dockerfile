@@ -8,7 +8,8 @@ RUN docker-php-ext-configure zip --with-libzip
 RUN docker-php-ext-install pdo_mysql zip
 
 # Install PHP Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# Replaced with docker run --rm -v $(pwd)/:/app composer install
+# RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Remove Cache
 RUN rm -rf /var/cache/apk/*
