@@ -1,3 +1,3 @@
-# php-fpm-with-composer
+# php-fpm-with-xdebug
 
-Simple image based on php-fpm with composer
+Simple image based on php-fpm with xdebug enable
